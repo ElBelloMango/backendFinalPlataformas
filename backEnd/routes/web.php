@@ -18,7 +18,6 @@ Route::get('/', function () {
 });
 
 //Css
-
 URL::asset('css/style.css');
 URL::asset('css/bootstrap.css');
 URL::asset('css/fontawesome-all.min.css');
@@ -49,12 +48,12 @@ URL::asset('images/Erwin.png');
 URL::asset('images/erwinFachero.jpg');
 URL::asset('images/Historia.png');
 URL::asset('images/Levi.png');
-// URL::asset('images/renderizar.images');
-// URL::asset('images/rotadorBanners.images');
-// URL::asset('images/SmoothScroll.min.images');
-// URL::asset('images/renderizar.images');
-// URL::asset('images/rotadorBanners.images');
-// URL::asset('images/SmoothScroll.min.images');
-// URL::asset('images/renderizar.images');
-// URL::asset('images/rotadorBanners.images');
-// URL::asset('images/SmoothScroll.min.images');
+URL::asset('images/Mikasa.png');
+URL::asset('images/mikasaModoLucha.jpg');
+URL::asset('images/move-top.png');
+URL::asset('images/PersonajesQueridos.jpg');
+URL::asset('images/titanBestia.jpg');
+URL::asset('images/TitanBestia.png');
+URL::asset('images/whatsapp.png');
+URL::asset('images/Ymir_Fritz.png');
+URL::asset('images/zekeJeager.png');
