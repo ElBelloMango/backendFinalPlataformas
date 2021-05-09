@@ -38,3 +38,23 @@ URL::asset('js/registroLogueo.js');
 URL::asset('js/renderizar.js');
 URL::asset('js/rotadorBanners.js');
 URL::asset('js/SmoothScroll.min.js');
+
+//Images
+URL::asset('images/arminArlet.jpg');
+URL::asset('images/bannerSNK.jpg');
+URL::asset('images/eren-jaeger-portada.jpg');
+URL::asset('images/EreneJeager.png');
+URL::asset('images/erenVagabundo.jpg');
+URL::asset('images/Erwin.png');
+URL::asset('images/erwinFachero.jpg');
+URL::asset('images/Historia.png');
+URL::asset('images/Levi.png');
+// URL::asset('images/renderizar.images');
+// URL::asset('images/rotadorBanners.images');
+// URL::asset('images/SmoothScroll.min.images');
+// URL::asset('images/renderizar.images');
+// URL::asset('images/rotadorBanners.images');
+// URL::asset('images/SmoothScroll.min.images');
+// URL::asset('images/renderizar.images');
+// URL::asset('images/rotadorBanners.images');
+// URL::asset('images/SmoothScroll.min.images');
