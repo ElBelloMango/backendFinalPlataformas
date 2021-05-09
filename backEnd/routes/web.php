@@ -57,3 +57,6 @@ URL::asset('images/TitanBestia.png');
 URL::asset('images/whatsapp.png');
 URL::asset('images/Ymir_Fritz.png');
 URL::asset('images/zekeJeager.png');
+
+//Scripts
+URL::asset('scripts/script.php');

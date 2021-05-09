@@ -4,6 +4,7 @@ window.onload=init;
 var secciones = [];
 function init()
 {
+    // alert(window.location.pathname);
     asignarVariables();
     asignarRutas();
     if(window.location.pathname=="/personajes.html"||window.location.pathname=="/finalPlataformas/personajes.html")
@@ -12,7 +13,7 @@ function init()
     }
     if(window.location.pathname=="/index.html" || window.location.pathname=="/"||window.location.pathname=="/finalPlataformas/index.html"||window.location.pathname=="/finalPlataformas/")
     {
-        logeado=false;
+        logeado=true;
         logeo();       //Se comentó la funcion logueo por que el md5 no funciona en githubpages ya que no soporta php, para el funcionamiento correcto del logeo colocar la variable logueo de la linea 15 en false y quite el comentario en esta linea
     }
     if(window.location.pathname=="/renderizarAPI.html"||window.location.pathname=="/finalPlataformas/renderizarAPI.html")
