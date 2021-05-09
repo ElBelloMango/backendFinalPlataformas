@@ -16,6 +16,25 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('index');
 });
+Route::get('/beneficios', function () {
+    return view('beneficios');
+});
+Route::get('/contacto', function () {
+    return view('contacto');
+});
+Route::get('/personajes', function () {
+    return view('personajes');
+});
+Route::get('/registro', function () {
+    return view('registro');
+});
+Route::get('/renderizarAPI', function () {
+    return view('renderizarAPI');
+});
+Route::get('/acercade', function () {
+    return view('acercade');
+});
+
 
 //Css
 URL::asset('css/style.css');

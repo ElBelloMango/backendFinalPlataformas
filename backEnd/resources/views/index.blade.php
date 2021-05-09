@@ -84,12 +84,12 @@ SmartPhone Compatible web template, free WebDesigns for Nokia, Samsung, LG, Sony
 						</ul>
 						<!-- Login -->
 						<li class="nav-item active  mr-3">
-							<a class="nav-link" id="index.html" href="javascript:void(0)">Inicio
+							<a class="nav-link"  href="/">Inicio
 								<span class="sr-only">(current)</span>
 							</a>
 						</li>
 						<li class="nav-item  mr-3">
-							<a class="nav-link scroll" id="acercade.html" href="javascript:void(0)">Informacion</a>
+							<a class="nav-link" href="/acercade">Informacion</a>
 						</li>
 						<li class="nav-item dropdown mr-3">
 							<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
@@ -97,18 +97,18 @@ SmartPhone Compatible web template, free WebDesigns for Nokia, Samsung, LG, Sony
 								Desplegable
 							</a>
 							<div class="dropdown-menu" aria-labelledby="navbarDropdown">
-								<a class="dropdown-item scroll" id="personajes.html"
-									href="javascript:void(0)">Personajes</a>
+								<a class="dropdown-item"
+					                href="/personajes">Personajes</a>
 								<div class="dropdown-divider"></div>
-								<a class="dropdown-item scroll" id="beneficios.html"
-									href="javascript:void(0)">Beneficios</a>
+								<a class="dropdown-item" 
+									href="/beneficios">Beneficios</a>
 							</div>
 						</li>
 						<li class="nav-item">
-							<a class="nav-link scroll" id="contacto.html" href="javascript:void(0)">Contacto</a>
+							<a class="nav-link" href="/contacto">Contacto</a>
 						</li>
 						<li class="nav-item">
-							<a class="nav-link scroll" id="renderizarAPI.html" href="javascript:void(0)">API</a>
+							<a class="nav-link"  href="/renderizarAPI">API</a>
 						</li>
 					</ul>
 				</div>
