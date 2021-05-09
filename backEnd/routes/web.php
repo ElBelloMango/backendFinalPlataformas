@@ -17,21 +17,24 @@ Route::get('/', function () {
     return view('index');
 });
 
+//Css
+
 URL::asset('css/style.css');
 URL::asset('css/bootstrap.css');
 URL::asset('css/fontawesome-all.min.css');
 
+//Javascript
 URL::asset('js/app.js');
 URL::asset('js/bootstrap.js');
 URL::asset('js/easing.js');
 URL::asset('js/fontawesome.min.js');
 URL::asset('js/jquery-2.2.3.min.js');
 URL::asset('js/logeo.js');
-// URL::asset('js/style.js');
-// URL::asset('js/bootstrap.js');
-// URL::asset('js/fontawesome-all.min.js');
-// URL::asset('js/style.js');
-// URL::asset('js/bootstrap.js');
-// URL::asset('js/fontawesome-all.min.js');
-// URL::asset('js/style.js');
-// URL::asset('js/bootstrap.js');
+URL::asset('js/move-top.js');
+URL::asset('js/pristine.js');
+URL::asset('js/pristine.min.js');
+URL::asset('js/referencias.js');
+URL::asset('js/registroLogueo.js');
+URL::asset('js/renderizar.js');
+URL::asset('js/rotadorBanners.js');
+URL::asset('js/SmoothScroll.min.js');
