@@ -32,6 +32,7 @@ SmartPhone Compatible web template, free WebDesigns for Nokia, Samsung, LG, Sony
 	<!-- //Custom Theme files -->
 	<!--webfonts-->
 	<link href="//fonts.googleapis.com/css?family=Ubuntu:300,300i,400,400i,500,500i,700,700i" rel="stylesheet">
+    
 	<!--//webfonts-->
 	<script src="js/pristine.js"></script>
 	<script src="js/pristine.min.js"></script>
