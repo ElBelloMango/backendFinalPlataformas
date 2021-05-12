@@ -27,37 +27,7 @@
 </head>
 
 <body>
-    <div class=RegCont>
-        <h3>Registro</h3>
-        <div class=formCont>
-            <form id="form-demo" method = "post" class="container">
-                <div class="form-group">
-                    <label>Nombre</label>
-                    <br><input type="text" id="name" name="name" class="form-control" requerid>
-                </div>
-                <!-- <div class="form-group">
-                    <label>Apellido</label>
-                    <br><input type="text" id="apellido" name="apellido" class="form-control" requerid>
-                </div> -->
-                <div class="form-group">
-                    <label>Correo</label>
-                    <br><input type="email" id="email" name="email" class="form-control" requerid>
-                </div>
-                <div class="form-group">
-                    <label>Contrase&ntilde;a</label>
-                    <br><input type="password" id="password" name="password" class="form-control" requerid>
-                </div>
-                <!-- <div class="form-group">
-                    <label>Validar Contrase&ntilde;a</label>
-                    <br><input type="password" id="password2" name="password2" class="form-control" requerid>
-                </div> -->
-                <div class="form-group">
-                    <br><input class="btn-agile" type="submit" id = "registrar" name="registrar" value="Registrarse">
-                </div>
-            </form>
-        </div>
-    </div>
-    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+       <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
         <script>
             let boton, name, email, password;
             window.onload = ()=>{
@@ -85,9 +55,11 @@
                         email: datos.email,
                         password: datos.password
                     }
-                }).then(function (response){
+                }).then(function(data){
                     alert("Usuario registrado correctamente");
                     console.log(data);
+                    localStorage.setItem("token",data.data.token);
+                    location.assign("/");
                     // localStorage.setItem("token",data.data.token);
                 }).catch(function (error){
                     alert(error);
@@ -95,6 +67,38 @@
                 });
             }
         </script>
+    <div class=RegCont>
+        <h3>Registro</h3>
+        <div class=formCont>
+            <form id="form-demo" class="container">
+                <div class="form-group">
+                    <label>Nombre</label>
+                    <br><input type="text" id="name" name="name" class="form-control" requerid>
+                </div>
+                <!-- <div class="form-group">
+                    <label>Apellido</label>
+                    <br><input type="text" id="apellido" name="apellido" class="form-control" requerid>
+                </div> -->
+                <div class="form-group">
+                    <label>Correo</label>
+                    <br><input type="email" id="email" name="email" class="form-control" requerid>
+                </div>
+                <div class="form-group">
+                    <label>Contrase&ntilde;a</label>
+                    <br><input type="password" id="password" name="password" class="form-control" requerid>
+                </div>
+                <!-- <div class="form-group">
+                    <label>Validar Contrase&ntilde;a</label>
+                    <br><input type="password" id="password2" name="password2" class="form-control" requerid>
+                </div> -->
+                <div class="form-group">
+                    <!-- <br><input class="btn-agile" type="submit" id = "registrar" name="registrar" value="Registrarse"> -->
+                    <br><input class="btn-agile" type="button" id = "registrar" name="registrar" value="Registrarse">
+                </div>
+            </form>
+        </div>
+    </div>
+    
 </body>
 
 </html>
