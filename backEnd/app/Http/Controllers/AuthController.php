@@ -22,6 +22,26 @@ class AuthController extends Controller
         ]);
         $user->save();
         $token=$user->createToken($user->email.'-'.now());
-        return response()->json(['user'=>$user, 'token'=>$token->accessToken]);
+        return response()->json([
+            'user'=>$user, 
+            'token'=>$token->accessToken
+        ]);
     }
+
+    public function login(Request $request) { 
+        $request->validate([ 
+            'email'=>'required|email|exists:users,email', 
+            'password'=> 'required|min:6' ]);   
+            if(Auth::attempt(['email'=>$request->email,'password'=>$request->password])) { 
+                $user=Auth::user(); 
+                $token = $user->createToken($user->email.'-'.now()); 
+                return response()->json([ 
+                    'token'=>$token->accessToken, 
+                    'user'=>$user 
+                ]); 
+            } 
+            else{ 
+                return response()->json([ 'error'=>"unauthorized" ]); 
+            }
+        }
 }
