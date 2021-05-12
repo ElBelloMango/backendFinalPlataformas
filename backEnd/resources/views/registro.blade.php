@@ -30,7 +30,7 @@
     <div class=RegCont>
         <h3>Registro</h3>
         <div class=formCont>
-            <form id="form-demo" action="api/registro"  method="post" class="container">
+            <form id="form-demo" method = "post" class="container">
                 <div class="form-group">
                     <label>Nombre</label>
                     <br><input type="text" id="name" name="name" class="form-control" requerid>
@@ -52,11 +52,49 @@
                     <br><input type="password" id="password2" name="password2" class="form-control" requerid>
                 </div> -->
                 <div class="form-group">
-                    <br><input class="btn-agile" type="submit" name="registrarse" value="Registrarse">
+                    <br><input class="btn-agile" type="submit" id = "registrar" name="registrar" value="Registrarse">
                 </div>
             </form>
         </div>
     </div>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+        <script>
+            let boton, name, email, password;
+            window.onload = ()=>{
+
+                boton = document.getElementById("registrar");
+                name = document.getElementById("name");
+                email = document.getElementById("email");
+                password = document.getElementById("password");
+
+                boton.addEventListener("click", ()=>{
+                    enviarDatos({
+                        name:name.value,
+                        email:email.value,
+                        password:password.value
+                    });
+                });
+            }
+            function enviarDatos(datos){
+                console.dir(datos);
+                axios({
+                    method: 'post',
+                    url: 'api/registro',
+                    data: {
+                        name: datos.name,
+                        email: datos.email,
+                        password: datos.password
+                    }
+                }).then(function (response){
+                    alert("Usuario registrado correctamente");
+                    console.log(data);
+                    // localStorage.setItem("token",data.data.token);
+                }).catch(function (error){
+                    alert(error);
+                    console.log(error);
+                });
+            }
+        </script>
 </body>
 
 </html>
