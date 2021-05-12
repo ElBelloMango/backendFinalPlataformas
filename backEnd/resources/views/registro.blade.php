@@ -23,34 +23,34 @@
 	<!--//webfonts-->
     <script src="js/pristine.js"></script>
     <script src="js/pristine.min.js"></script>
-    <script src="js/registroLogueo.js"></script>
+    <!-- <script src="js/registroLogueo.js"></script> -->
 </head>
 
 <body>
     <div class=RegCont>
         <h3>Registro</h3>
         <div class=formCont>
-            <form id="form-demo" novalidate method="post" class="container">
+            <form id="form-demo" action="api/registro"  method="post" class="container">
                 <div class="form-group">
                     <label>Nombre</label>
-                    <br><input type="text" id="nombre" name="nombre" class="form-control" requerid>
+                    <br><input type="text" id="name" name="name" class="form-control" requerid>
                 </div>
-                <div class="form-group">
+                <!-- <div class="form-group">
                     <label>Apellido</label>
                     <br><input type="text" id="apellido" name="apellido" class="form-control" requerid>
-                </div>
+                </div> -->
                 <div class="form-group">
                     <label>Correo</label>
-                    <br><input type="email" id="correo" name="correo" class="form-control" requerid>
+                    <br><input type="email" id="email" name="email" class="form-control" requerid>
                 </div>
                 <div class="form-group">
                     <label>Contrase&ntilde;a</label>
-                    <br><input type="password" id="clave1" name="clave1" class="form-control" requerid>
+                    <br><input type="password" id="password" name="password" class="form-control" requerid>
                 </div>
-                <div class="form-group">
+                <!-- <div class="form-group">
                     <label>Validar Contrase&ntilde;a</label>
-                    <br><input type="password" id="clave1" name="clave1" class="form-control" requerid>
-                </div>
+                    <br><input type="password" id="password2" name="password2" class="form-control" requerid>
+                </div> -->
                 <div class="form-group">
                     <br><input class="btn-agile" type="submit" name="registrarse" value="Registrarse">
                 </div>

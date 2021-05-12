@@ -34,6 +34,9 @@ Route::get('/renderizarAPI', function () {
 Route::get('/acercade', function () {
     return view('acercade');
 });
+Route::get('/registro', function () {
+    return view('registro');
+});
 
 
 //Css

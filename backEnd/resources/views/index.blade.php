@@ -76,7 +76,7 @@ SmartPhone Compatible web template, free WebDesigns for Nokia, Samsung, LG, Sony
 											<button type="submit">Iniciar Sesion</button>
 										</div>
 										<div class="signup-link">
-											Todavia no eres un miembro? <br> <a href="registro.html">Registrate
+											Todavia no eres un miembro? <br> <a href="/registro">Registrate
 												Ahora!</a></div>
 									</form>
 								</div>
