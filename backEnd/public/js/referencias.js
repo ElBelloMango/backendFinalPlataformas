@@ -1,12 +1,12 @@
-var control=["acercade.html","personajes.html","beneficios.html","contacto.html", "renderizarAPI.html"];
+var control=["/acercade","/personajes","/beneficios","/contacto", "/renderizarAPI"];
 var logeado = true;
 window.onload=init;
 var secciones = [];
 function init()
 {
     // alert(window.location.pathname);
-    //asignarVariables();
-    //asignarRutas();
+    asignarVariables();
+    asignarRutas();
     if(window.location.pathname=="/personajes")
     {
         rotacion();
@@ -26,12 +26,12 @@ function init()
 
 function asignarVariables()
 {
-    secciones["index.html"] = document.getElementById("index.html");
-    secciones["acercade.html"] = document.getElementById("acercade.html");
-    secciones["personajes.html"] = document.getElementById("personajes.html");
-    secciones["beneficios.html"] = document.getElementById("beneficios.html");
-    secciones["contacto.html"] = document.getElementById("contacto.html");
-    secciones["renderizarAPI.html"] = document.getElementById("renderizarAPI.html");
+    secciones["/"] = document.getElementById("/");
+    secciones["/acercade"] = document.getElementById("/acercade");
+    secciones["/personajes"] = document.getElementById("/personajes");
+    secciones["/beneficios"] = document.getElementById("/beneficios");
+    secciones["/contacto"] = document.getElementById("/contacto");
+    secciones["/renderizarAPI"] = document.getElementById("/renderizarAPI");
 }
 
 function asignarRutas()
@@ -57,7 +57,7 @@ function navegacion(event)
     var id = event.target.id;
     console.log("Control Acceso: "+controlAcceso(id));
     console.log("logged: "+logeado);
-    if (controlAcceso(id) && logeado || id == "index.html"){
+    if (controlAcceso(id) && logeado || id == "/"){
         location.href = id;
     }
     else{

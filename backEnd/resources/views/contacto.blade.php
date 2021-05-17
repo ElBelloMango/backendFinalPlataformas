@@ -54,13 +54,13 @@ SmartPhone Compatible web template, free WebDesigns for Nokia, Samsung, LG, Sony
 				<!-- Login -->
 				<div class="collapse navbar-collapse" id="navbarSupportedContent">
 					<ul class="navbar-nav text-center ml-auto">
-					<li class="nav-item mr-3">
-							<a class="nav-link"  href="/">Inicio
+					<li class="nav-item active  mr-3">
+							<a class="nav-link"  id="/" href="javascript:void(0)">Inicio
 								<span class="sr-only">(current)</span>
 							</a>
 						</li>
 						<li class="nav-item  mr-3">
-							<a class="nav-link" href="/acercade">Informacion</a>
+							<a class="nav-link" id="/acercade" href="javascript:void(0)">Informacion</a>
 						</li>
 						<li class="nav-item dropdown mr-3">
 							<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
@@ -69,17 +69,17 @@ SmartPhone Compatible web template, free WebDesigns for Nokia, Samsung, LG, Sony
 							</a>
 							<div class="dropdown-menu" aria-labelledby="navbarDropdown">
 								<a class="dropdown-item"
-					                href="/personajes">Personajes</a>
+									id="/personajes" href="javascript:void(0)">Personajes</a>
 								<div class="dropdown-divider"></div>
 								<a class="dropdown-item" 
-									href="/beneficios">Beneficios</a>
+									id="/beneficios" href="javascript:void(0)">Beneficios</a>
 							</div>
 						</li>
-						<li class="nav-item active">
-							<a class="nav-link" href="/contacto">Contacto</a>
+						<li class="nav-item">
+							<a class="nav-link" id="/contacto" href="javascript:void(0)">Contacto</a>
 						</li>
 						<li class="nav-item">
-							<a class="nav-link"  href="/renderizarAPI">API</a>
+							<a class="nav-link"  id="/renderizarAPI" href="javascript:void(0)">API</a>
 						</li>
 					</ul>
 				</div>
