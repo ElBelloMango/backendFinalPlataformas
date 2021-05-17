@@ -29,19 +29,23 @@
 <body>
        <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
         <script>
-            let boton, name, email, password;
+            let boton, name, email, password, cellphone, address;
             window.onload = ()=>{
 
                 boton = document.getElementById("registrar");
                 name = document.getElementById("name");
                 email = document.getElementById("email");
                 password = document.getElementById("password");
+                cellphone = document.getElementById("cellphone");
+                address = document.getElementById("address");
 
                 boton.addEventListener("click", ()=>{
                     enviarDatos({
                         name:name.value,
                         email:email.value,
                         password:password.value
+                        cellphone:cellphone.value,
+                        address:address.value
                     });
                 });
             }
@@ -53,7 +57,9 @@
                     data: {
                         name: datos.name,
                         email: datos.email,
-                        password: datos.password
+                        password: datos.password,
+                        cellphone:datos.cellphone,
+                        address:datos.address
                     }
                 }).then(function(data){
                     alert("Usuario registrado correctamente");
@@ -86,6 +92,14 @@
                 <div class="form-group">
                     <label>Contrase&ntilde;a</label>
                     <br><input type="password" id="password" name="password" class="form-control" requerid>
+                </div>
+                <div class="form-group">
+                    <label>Celular</label>
+                    <br><input type="text" id="cellphone" name="cellphone" class="form-control" requerid>
+                </div>
+                <div class="form-group">
+                    <label>Direccion</label>
+                    <br><input type="text" id="address" name="address" class="form-control" requerid>
                 </div>
                 <!-- <div class="form-group">
                     <label>Validar Contrase&ntilde;a</label>
