@@ -43,7 +43,7 @@
                     enviarDatos({
                         name:name.value,
                         email:email.value,
-                        password:password.value
+                        password:password.value,
                         cellphone:cellphone.value,
                         address:address.value
                     });
@@ -53,7 +53,7 @@
                 console.dir(datos);
                 axios({
                     method: 'post',
-                    url: 'api/registro',
+                    url: 'api/auth/registro',
                     data: {
                         name: datos.name,
                         email: datos.email,

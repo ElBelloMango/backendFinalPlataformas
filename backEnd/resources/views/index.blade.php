@@ -64,17 +64,17 @@ SmartPhone Compatible web template, free WebDesigns for Nokia, Samsung, LG, Sony
 								<div class="container1">
 									<label for="show" class="close-btn fas fa-times" title="close"></label>
 									<div class="text">Inicio de Sesion</div>
-									<form novalidate method="post" class="form1" id="form-demo">
+									<form novalidate class="form1" id="form-demo">
 										<div class="data">
 											<label>Correo</label>
-											<input type="text" name="correo" required>
+											<input type="text" id="email" name="email" required>
 										</div>
 										<div class="data">
 											<label>Contraseña</label>
-											<input type="password" name="clave1" required>
+											<input type="password" id="password" name="password" required>
 										</div>
 										<div class="btn">
-											<button type="submit">Iniciar Sesion</button>
+											<input type="button" id="logear" name="logear" value="Iniciar Sesion">
 										</div>
 										<div class="signup-link">
 											Todavia no eres un miembro? <br> <a href="/registro">Registrate
