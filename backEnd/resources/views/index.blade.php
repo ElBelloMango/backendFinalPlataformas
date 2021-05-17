@@ -60,6 +60,46 @@ SmartPhone Compatible web template, free WebDesigns for Nokia, Samsung, LG, Sony
 							<li class="nav-item" id="frm">
 								<input type="checkbox" id="show">
 								<label for="show" class="show-btn"><a class="nav-link">Iniciar Sesion</a></label>
+								<script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+								<script>
+									let boton, name, email, password;
+									window.onload = ()=>{
+
+										// boton = document.getElementById("registrar");
+										// name = document.getElementById("name");
+										email = document.getElementById("email");
+										password = document.getElementById("password");
+
+										boton.addEventListener("click", ()=>{
+											enviarDatos({
+												name:name.value,
+												email:email.value,
+												password:password.value
+											});
+										});
+									}
+									function enviarDatos(datos){
+										console.dir(datos);
+										axios({
+											method: 'post',
+											url: 'api/registro',
+											data: {
+												name: datos.name,
+												email: datos.email,
+												password: datos.password
+											}
+										}).then(function(data){
+											alert("Usuario registrado correctamente");
+											console.log(data);
+											localStorage.setItem("token",data.data.token);
+											location.assign("/");
+											// localStorage.setItem("token",data.data.token);
+										}).catch(function (error){
+											alert(error);
+											console.log(error);
+										});
+									}
+								</script>
 								<div class="container1">
 									<label for="show" class="close-btn fas fa-times" title="close"></label>
 									<div class="text">Inicio de Sesion</div>
