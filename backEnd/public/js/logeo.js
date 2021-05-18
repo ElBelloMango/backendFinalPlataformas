@@ -23,6 +23,7 @@ function enviarDatos(datos){
         }
     }).then(function(data){
         alert("Usuario logeado correctamente");
+        logeado = true;
         console.log(data);
         // localStorage.setItem("token",data.data.token);
     }).catch(function (error){
