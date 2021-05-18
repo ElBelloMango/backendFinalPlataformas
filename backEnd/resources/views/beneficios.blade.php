@@ -59,11 +59,11 @@ SmartPhone Compatible web template, free WebDesigns for Nokia, Samsung, LG, Sony
 								<span class="sr-only">(current)</span>
 							</a>
 						</li>
-						<li class="nav-item  mr-3">
+						<li class="nav-item mr-3">
 							<a class="nav-link" id="/acercade" href="javascript:void(0)">Informacion</a>
 						</li>
-						<li class="nav-item dropdown mr-3">
-							<a class="nav-link active dropdown-toggle" href="#" id="navbarDropdown" role="button"
+						<li class="nav-item dropdown active mr-3">
+							<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
 								data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
 								Desplegable
 							</a>
