@@ -54,7 +54,7 @@ SmartPhone Compatible web template, free WebDesigns for Nokia, Samsung, LG, Sony
 				<!-- Login -->
 				<div class="collapse navbar-collapse" id="navbarSupportedContent">
 					<ul class="navbar-nav text-center ml-auto">
-					<li class="nav-item active  mr-3">
+					<li class="nav-item mr-3">
 							<a class="nav-link"  id="/" href="javascript:void(0)">Inicio
 								<span class="sr-only">(current)</span>
 							</a>
@@ -63,7 +63,7 @@ SmartPhone Compatible web template, free WebDesigns for Nokia, Samsung, LG, Sony
 							<a class="nav-link" id="/acercade" href="javascript:void(0)">Informacion</a>
 						</li>
 						<li class="nav-item dropdown mr-3">
-							<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+							<a class="nav-link active dropdown-toggle" href="#" id="navbarDropdown" role="button"
 								data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
 								Desplegable
 							</a>
@@ -71,7 +71,7 @@ SmartPhone Compatible web template, free WebDesigns for Nokia, Samsung, LG, Sony
 								<a class="dropdown-item"
 									id="/personajes" href="javascript:void(0)">Personajes</a>
 								<div class="dropdown-divider"></div>
-								<a class="dropdown-item" 
+								<a class="dropdown-item active" 
 									id="/beneficios" href="javascript:void(0)">Beneficios</a>
 							</div>
 						</li>
