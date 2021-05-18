@@ -13,7 +13,7 @@ function init()
     }
     if( window.location.pathname=="/")
     {
-        logeado=true;
+        logeado=false;
         logeo();       //Se comentó la funcion logueo por que el md5 no funciona en githubpages ya que no soporta php, para el funcionamiento correcto del logeo colocar la variable logueo de la linea 15 en false y quite el comentario en esta linea
     }
     if(window.location.pathname=="/renderizarAPI")
