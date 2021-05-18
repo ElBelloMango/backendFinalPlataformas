@@ -84,7 +84,7 @@ SmartPhone Compatible web template, free WebDesigns for Nokia, Samsung, LG, Sony
 							</li>
 						</ul>
 						<!-- Login -->
-						<li class="nav-item active  mr-3">
+						<li class="nav-item active mr-3">
 							<a class="nav-link"  id="/" href="javascript:void(0)">Inicio
 								<span class="sr-only">(current)</span>
 							</a>
