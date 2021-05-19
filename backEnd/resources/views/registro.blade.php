@@ -68,7 +68,10 @@
                     location.assign("/");
                     // localStorage.setItem("token",data.data.token);
                 }).catch(function (error){
-                    alert(error);
+                    if(error.response["status"]==422)
+                        alert("Verifique los datos del formulario");
+                    else
+                        alert("Ocurrio un error inesperado, contacte al soporte");
                     console.log(error);
                 });
             }
