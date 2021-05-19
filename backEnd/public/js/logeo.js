@@ -1,4 +1,5 @@
 let boton, name, email, password;
+var e;
 function logeo(){
 
     boton = document.getElementById("logear");
@@ -27,7 +28,11 @@ function enviarDatos(datos){
         console.log(data);
         // localStorage.setItem("token",data.data.token);
     }).catch(function (error){
-        alert(error);
+        if(error.response["status"]==422)
+            alert("Verifique los datos del formulario");
+        else
+            alert("Ocurrio un error inesperado, contacte al soporte");
+        e = error;
         console.log(error);
     });
 }
